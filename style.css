@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700&family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap');
 
 h6{
     font-family: 'Handjet', cursive;
@@ -28,14 +27,17 @@ header,#Accueil{
 header .header-lien {
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
   
 }
 .logo{
-    margin-right: auto;
+    /* margin-right: auto; */
     width: 5%;
     font-size: 3rem;
     font-family: 'Handjet', cursive;
 }
+
 .header-lien  a{
     margin-right: 3rem;
 }
@@ -47,8 +49,18 @@ header .header-lien {
     color: #1F2039;
     font-size: 2rem;
 }
+.expertise{
+    padding: 1rem;
+}
 .lien a{
     text-decoration: none;
+}
+#projet_list li{
+    list-style: none;
+}
+#projet_list li a{
+    padding-left: 0rem;
+    font-size: 100%;
 }
 .expertise h1{
     color: #A5B4FC;
@@ -82,23 +94,19 @@ header .header-lien {
 }
 
 .reseaux-sociaux a{
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     font-size: 3rem;
     border: 1px solid black;
     padding: 0.5rem;
     border-radius: 40%;
-  
 }
-
-
-
-
 
 footer{
     margin: 1rem;
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-top: 1px dashed black;
     
 }
@@ -108,15 +116,25 @@ footer{
         justify-content: center;
         align-items: center;
     }
-
-    nav h2{
-        text-align: center;
+    .info h2{
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+    .lien{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .expertise h1{
+        
+        font-size: 1rem;
     }
     .logo{
-        margin-right: 0;
-       position: relative;
-       right: 4rem;
-
+        font-size: 1rem;
+    }
+    .expertise p{
+        font-size: 1rem;
+        width: 100%;
     }
     #Accueil{
         flex-direction: column;
@@ -125,14 +143,21 @@ footer{
         width: 100%;
     }
     .reseaux-sociaux{
-        padding: 2rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .reseaux-sociaux a{
+        font-size: 1rem;
     }
     #Accueil .expertise{
         order: 2;
         width: 100%;
         
     }
-    
+    .sites_en_ligne{
+        width: 100%;
+
+     }
 
     #Accueil .accueil-image{
         order: 1;
@@ -141,45 +166,37 @@ footer{
     #Accueil .accueil-image img{
         width: 100%;
     }
-
-   main{
+    main{
     padding: 1rem;
+
    }
    .sites_en_ligne{
     width: 100%;
    }
    footer{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+   
    }
 }
-@media screen and (max-width:900px){
-   
-     .lien{
+@media screen and (max-width:1070px){
+   .lien{
         display: flex;
         flex-direction: column;
-        position: relative;
-        left: 4rem;
-     
-     }
-     
-
+    }
     .reseaux-sociaux a{
         font-size: 1.5rem;
-        margin-right: 1rem;
+       
     }
     
-
-   
-
 }
 @media screen and (min-width:768px) and (max-width:820px) {
     .lien{
         display: flex;
         flex-direction: column;
-        position: relative;
-        left: 4rem;
+        /* position: relative;
+        left: 4rem; */
     }
 }
 @media screen and (min-width:1000px){
@@ -187,19 +204,9 @@ footer{
         display: flex;
         justify-content: space-between;
         font-size: 2rem;
-        
     }
     .lien a{
         margin-right: 1rem;
     }
-    
-    
-}
-@media screen and (min-width:817px) and (max-width:912px) {
-    .lien{
-        flex-direction: column;
-    }
-}
-@media screen and (min-width:412px) and (max-width:730px) {
-    
+   
 }
