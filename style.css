@@ -75,6 +75,8 @@ header .header-lien {
     gap: 1rem;
     width: 54%;
     margin: auto;
+    align-items: center;
+    justify-content: center;
    
 }
 .sites_en_ligne{
@@ -113,11 +115,11 @@ header .header-lien {
 .cv:hover{
     background: linear-gradient(#8e86b5, #acaeed);
 }
-
-.cva a{
-    text-decoration: none;
+#cv{
     color: white;
+    text-decoration: none;
 }
+
 footer{
     margin: 1rem;
     flex-shrink: 0;
