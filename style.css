@@ -100,7 +100,24 @@ header .header-lien {
     padding: 0.5rem;
     border-radius: 40%;
 }
+/* cv */
+.cv{
+    background: #A5B4FC;
+    margin: auto;
+    width: 13%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
 
+}
+.cv:hover{
+    background: linear-gradient(#8e86b5, #acaeed);
+}
+
+.cva a{
+    text-decoration: none;
+    color: white;
+}
 footer{
     margin: 1rem;
     flex-shrink: 0;
@@ -178,6 +195,11 @@ footer{
     /* align-items: center;
     justify-content: center; */
    
+   }
+
+   .cv{
+    width: 80%;
+    padding: 1rem;
    }
 }
 @media screen and (max-width:1070px){
