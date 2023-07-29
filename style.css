@@ -203,6 +203,9 @@ footer{
     width: 80%;
     padding: 1rem;
    }
+   #cv{
+    font-size: 1rem;
+   }
 }
 @media screen and (max-width:1070px){
    .lien{
