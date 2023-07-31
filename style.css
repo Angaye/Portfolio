@@ -8,12 +8,11 @@ h6{
 
 body{
     display: flex;
-   
     flex-direction: column;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: 100vh;
+    
 }
 main{
     background: #1F2039;
@@ -30,6 +29,41 @@ header .header-lien {
   display: flex;
   justify-content: space-between;
   
+}
+.laoder{
+    display: grid;
+    place-items: center;
+    background: white;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: disapper 200ms 2s forwards;
+    transform-origin: top;
+    animation-delay: 5s;
+}
+.laoder::after {
+    content: "";
+    animation:pulse 2s infinite ease-in-out ;
+    height: 100px;
+    width: 100px;
+    border-right: 1px solid transparent;
+    border-top: 5px solid #1F2039;
+    border-radius: 50%;
+}
+@keyframes disapper{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0)
+    }
+}
+@keyframes pulse{
+    to{
+        transform: rotate(360deg);
+    }
 }
 .logo{
     /* margin-right: auto; */
@@ -69,6 +103,9 @@ header .header-lien {
 .expertise p{
     color: white;
     font-size: 2rem;
+}
+#Accueil .accueil-image img{
+    border-radius: 1rem;
 }
 #Accueil{
     display: flex;
